@@ -8,7 +8,7 @@ namespace Api.Controllers
         [Authorize]
         public string Index()
         {
-            return "secret message";
+            return "secret message"; 
         }
     }
 }
