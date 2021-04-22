@@ -29,7 +29,7 @@ namespace Api.AuthRequirement
                 var accessToken = authHeader.ToString().Split(' ')[1];
 
                 var response = await _client
-                    .GetAsync($"https://localhost:44382/oauth/validate?access_token={accessToken}");
+                    .GetAsync($"https://localhost:44342/oauth/validate?access_token={accessToken}");
 
                 if(response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
